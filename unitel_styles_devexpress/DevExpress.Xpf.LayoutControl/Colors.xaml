@@ -1,0 +1,16 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <SolidColorBrush x:Key="Text.Foreground" Color="#FF000000" />
+  <Color x:Key="LayerSeparator.NormalColor">#FFACACAC</Color>
+  <Color x:Key="LayerSeparator.MouseOverColor">#FF0072C6</Color>
+  <Color x:Key="ElementSizer.GlyphNormalColor">#FFACACAC</Color>
+  <Color x:Key="ElementSizer.GlyphMouseOverColor">#FFACACAC</Color>
+  <Color x:Key="ElementSizer.GlyphBackgroundColor">#FFACACAC</Color>
+  <Color x:Key="GroupBoxButton.NormalColor">#FF666666</Color>
+  <Color x:Key="GroupBoxButton.MouseOverColor">#FF0072C6</Color>
+  <Color x:Key="GroupBoxButton.PressedColor">#FF0072C6</Color>
+  <SolidColorBrush x:Key="GroupBox.Background" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="GroupBox.BorderBrush" Color="#FFACACAC" />
+  <SolidColorBrush x:Key="GroupBox.SeparatorBrush" Color="#FFACACAC" />
+  <SolidColorBrush x:Key="GroupBox.TitleBackground" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="GroupSeparator.Brush" Color="#FFACACAC" />
+</ResourceDictionary>

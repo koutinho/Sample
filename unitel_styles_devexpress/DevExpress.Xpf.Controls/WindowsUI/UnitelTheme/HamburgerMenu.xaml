@@ -1,0 +1,199 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" xmlns:dxwuii="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/internal" xmlns:dxwuit="http://schemas.devexpress.com/winfx/2008/xaml/windowsui/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <dx:WpfSvgPalette x:Key="{dxwuit:HamburgerMenuSvgPaletteThemeKeyExtension ResourceKey=SvgPaletteInMenu}">
+    <SolidColorBrush x:Key="BlackColor" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="WhiteColor" Color="#FF0072C6" />
+    <SolidColorBrush x:Key="RedColor" Color="#FFD86344" />
+    <SolidColorBrush x:Key="YellowColor" Color="#FFEDC87E" />
+    <SolidColorBrush x:Key="GreenColor" Color="#FF68A490" />
+    <SolidColorBrush x:Key="BlueColor" Color="#FF4D82B8" />
+    <dx:WpfSvgPalette.States>
+      <dx:WpfSvgPalette x:Key="Hover">
+        <SolidColorBrush x:Key="BlackColor" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="WhiteColor" Color="#FF0072C6" />
+        <SolidColorBrush x:Key="RedColor" Color="#FFD86344" />
+        <SolidColorBrush x:Key="YellowColor" Color="#FFEDC87E" />
+        <SolidColorBrush x:Key="GreenColor" Color="#FF68A490" />
+        <SolidColorBrush x:Key="BlueColor" Color="#FF4D82B8" />
+      </dx:WpfSvgPalette>
+      <dx:WpfSvgPalette x:Key="Pressed">
+        <SolidColorBrush x:Key="BlackColor" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="WhiteColor" Color="#FF0072C6" />
+        <SolidColorBrush x:Key="RedColor" Color="#FFD86344" />
+        <SolidColorBrush x:Key="YellowColor" Color="#FFEDC87E" />
+        <SolidColorBrush x:Key="GreenColor" Color="#FF68A490" />
+        <SolidColorBrush x:Key="BlueColor" Color="#FF4D82B8" />
+      </dx:WpfSvgPalette>
+    </dx:WpfSvgPalette.States>
+  </dx:WpfSvgPalette>
+  <dx:WpfSvgPalette x:Key="{dxwuit:HamburgerMenuSvgPaletteThemeKeyExtension ResourceKey=SvgPaletteInSubMenu}">
+    <SolidColorBrush x:Key="BlackColor" Color="#FF808080" />
+    <SolidColorBrush x:Key="WhiteColor" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="RedColor" Color="#FFD86344" />
+    <SolidColorBrush x:Key="YellowColor" Color="#FFEDC87E" />
+    <SolidColorBrush x:Key="GreenColor" Color="#FF68A490" />
+    <SolidColorBrush x:Key="BlueColor" Color="#FF4D82B8" />
+    <dx:WpfSvgPalette.States>
+      <dx:WpfSvgPalette x:Key="Hover">
+        <SolidColorBrush x:Key="BlackColor" Color="#FF808080" />
+        <SolidColorBrush x:Key="WhiteColor" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="RedColor" Color="#FFD86344" />
+        <SolidColorBrush x:Key="YellowColor" Color="#FFEDC87E" />
+        <SolidColorBrush x:Key="GreenColor" Color="#FF68A490" />
+        <SolidColorBrush x:Key="BlueColor" Color="#FF4D82B8" />
+      </dx:WpfSvgPalette>
+      <dx:WpfSvgPalette x:Key="Pressed">
+        <SolidColorBrush x:Key="BlackColor" Color="#FF808080" />
+        <SolidColorBrush x:Key="WhiteColor" Color="#FFFFFFFF" />
+        <SolidColorBrush x:Key="RedColor" Color="#FFD86344" />
+        <SolidColorBrush x:Key="YellowColor" Color="#FFEDC87E" />
+        <SolidColorBrush x:Key="GreenColor" Color="#FF68A490" />
+        <SolidColorBrush x:Key="BlueColor" Color="#FF4D82B8" />
+      </dx:WpfSvgPalette>
+    </dx:WpfSvgPalette.States>
+  </dx:WpfSvgPalette>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=SplitViewOpenPaneWidth}">320</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=SplitViewCompactPaneWidth}">48</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=DefaultCompactWidth}">44</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=DefaultHeaderHeight}">44</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=DefaultItemHeight}">44</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=HeaderFontSize}">16</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=ItemSelectionIndicatorThickness}">3</sys:Double>
+  <sys:Double x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=FlyoutItemSelectionIndicatorThickness}">3</sys:Double>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=ItemSeparatorPadding}">4,2</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=HeaderPadding}">16,0,0,0</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=HeaderWithIconPadding}">4,0,0,0</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=NavigationItemPadding}">0,10,12,10</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=NavigationItemContentPadding}">4,0,0,0</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=SubMenuFlyoutItemPadding}">16,10,12,10</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=BottomBarItemPadding}">0,6</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=HyperlinkItemPadding}">12,12,12,12</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=ToggleStateButtonPadding}">6</Thickness>
+  <Thickness x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=FlyoutBackButtonPadding}">16</Thickness>
+  <!--#region ThemeBrushes-->
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=HeaderForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=HorizontalHeaderBackgroundBrush}" Color="#FF0072C6" Opacity="0.84" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=BackgroundBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=PaneBackgroundBrush}" Color="#FF0072C6" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=BottomBarBackgroundBrush}" Color="#FF0072C6" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=BottomBarSeparatorBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSeparatorBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=SubMenuPaneBackgroundBrush}" Color="#FF0061B2" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=SubMenuPaneForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonInlineBackgroundBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonInlineForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonInlineHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonInlineHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonInlinePressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonInlinePressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonFlyoutBackgroundBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonFlyoutForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonFlyoutHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonFlyoutHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonFlyoutPressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ToggleStateButtonFlyoutPressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutBackButtonBackgroundBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutBackButtonForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutBackButtonHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutBackButtonHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutBackButtonPressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutBackButtonPressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemBackgroundBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemHoverRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemPressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemPressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemPressedRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedHoverRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedPressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedPressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectedPressedRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemIndeterminateBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemIndeterminateForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemIndeterminateHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemIndeterminateHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemIndeterminatePressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemIndeterminatePressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemBackgroundBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemHoverRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemPressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemPressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemPressedRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedHoverBackgroundBrush}" Color="#1FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedHoverForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedHoverRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedPressedBackgroundBrush}" Color="#3FFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedPressedForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectedPressedRightForegroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=HyperlinkForegroundBrush}" Color="#FFE0EEEF" Opacity="0.84" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=HyperlinkHoverForegroundBrush}" Color="#FFE0EEEF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=HyperlinkPressedForegroundBrush}" Color="#FFE0EEEF" Opacity="0.9" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=ItemSelectionIndicatorBackgroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxwuit:HamburgerMenuBrushesThemeKey ResourceKey=FlyoutItemSelectionIndicatorBackgroundBrush}" Color="#FFFFFFFF" />
+  <Style x:Key="UIShape.Menu" TargetType="{x:Type Path}">
+    <Setter Property="Data" Value="F1 M 0,0L 16,0L 16,2L 0,2L 0,0 Z M 0,12L 16,12L 16,14L 0,14L 0,12 Z M 0,6L 16,6L 16,8L 0,8L 0,6 Z " />
+    <Setter Property="Fill" Value="#FF3E3E3E" />
+    <Setter Property="Height" Value="14" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="Stretch" Value="Fill" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Width" Value="16" />
+  </Style>
+  <Style x:Key="UIShape.MenuBack" TargetType="{x:Type Path}">
+    <Setter Property="Data" Value="F1 M 16,7L 16,9L 4,9L 8,13L 8,16L 0,8L 8,0L 8,3L 4,7L 16,7 Z " />
+    <Setter Property="Fill" Value="#FF3E3E3E" />
+    <Setter Property="Height" Value="16" />
+    <Setter Property="HorizontalAlignment" Value="Center" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="Stretch" Value="Fill" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Width" Value="16" />
+  </Style>
+  <ControlTemplate x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=MenuToggleStateButtonTemplate}" TargetType="{x:Type dxwui:HamburgerMenuToggleStateButton}">
+    <Grid>
+      <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True" />
+      <Border BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+        <Grid>
+          <ContentPresenter x:Name="contentPresenter" Visibility="Collapsed" />
+          <Path Fill="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Stretch="Uniform" Style="{StaticResource UIShape.Menu}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </Grid>
+      </Border>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <DataTrigger Binding="{Binding Path=(dxwui:HamburgerMenu.TemplateSettings).ShowRevealHighlightEffect, RelativeSource={RelativeSource Self}}" Value="True">
+        <Setter Property="dxwui:RevealHighlightOptions.Mode" TargetName="border" Value="BackgroundAndBorder" />
+      </DataTrigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxwuit:HamburgerMenuElementsThemeKey ResourceKey=SubMenuPaneBackButtonTemplate}" TargetType="{x:Type dxwuii:HamburgerSubMenuPaneBackButton}">
+    <Grid>
+      <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True" />
+      <Border BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+        <Grid>
+          <ContentPresenter x:Name="contentPresenter" Visibility="Collapsed" />
+          <Path Fill="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Stretch="Uniform" Style="{StaticResource UIShape.MenuBack}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+        </Grid>
+      </Border>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <DataTrigger Binding="{Binding Path=(dxwui:HamburgerMenu.TemplateSettings).ShowRevealHighlightEffect, RelativeSource={RelativeSource Self}}" Value="True">
+        <Setter Property="dxwui:RevealHighlightOptions.Mode" TargetName="border" Value="BackgroundAndBorder" />
+      </DataTrigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+</ResourceDictionary>

@@ -1,0 +1,40 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxdiag="http://schemas.devexpress.com/winfx/2008/xaml/diagram" xmlns:dxdiagt="http://schemas.devexpress.com/winfx/2008/xaml/diagram/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <SolidColorBrush x:Key="{dxdiagt:DiagramToolboxControlThemeKey ResourceKey=Background}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxdiagt:RulerThemeKey ResourceKey=Shadow}" Color="#FF3955A3" />
+  <SolidColorBrush x:Key="{dxdiagt:RulerThemeKey ResourceKey=Foreground}" Color="#FF525252" />
+  <SolidColorBrush x:Key="{dxdiagt:RulerThemeKey ResourceKey=HorizontalBackground}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxdiagt:RulerThemeKey ResourceKey=VerticalBackground}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxdiagt:RulerThemeKey ResourceKey=BorderBrush}" Color="#FFBBBBBB" />
+  <SolidColorBrush x:Key="{dxdiagt:RulerThemeKey ResourceKey=TickBrush}" Color="#FFBBBBBB" />
+  <SolidColorBrush x:Key="{dxdiagt:ControlsThemeKeys ResourceKey=SelectionPreviewBackground}" Color="#17000000" />
+  <SolidColorBrush x:Key="{dxdiagt:ControlsThemeKeys ResourceKey=SelectionPreviewBorderBrush}" Color="#FFABABAB" />
+  <SolidColorBrush x:Key="{dxdiagt:ControlsThemeKeys ResourceKey=GridLineBrush}" Color="#FFDADADA" />
+  <SolidColorBrush x:Key="{dxdiagt:ControlsThemeKeys ResourceKey=DragPreviewBrush}" Color="#FFABABAB" />
+  <LinearGradientBrush x:Key="{dxdiagt:DiagramControlThemeKeys ResourceKey=DiagramControlBackground}" EndPoint="0.5,1" StartPoint="0.5,0">
+    <GradientStop Color="#FFFFFFFF" Offset="0" />
+    <GradientStop Color="#FFF0F0F0" Offset="1" />
+  </LinearGradientBrush>
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ResizeBoxBackground}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=SelectionAdornerStroke}" Color="#FF939393" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ParameterPointsBackground}" Color="#FFFFFF00" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ParameterPointsStroke}" Color="#FF000000" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=SelectionAdornerMoveBorderBrush}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=SelectionPartBorderBrush}" Color="#FF21408F" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ConnectorConnectedMarkerFill}" Color="#FF0EA619" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ConnectorConnectedMarkerEndFill}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ConnectorConnectedMarkerStroke}" Color="#FF207626" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=BeginConnectedElementBackground}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=EndConnectedElementBackground}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=EndFreeElementBackground}" Color="#FFD1D1D1" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ConnectorDragColor}" Color="#FF808080" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ConnectorMovePointColor}" Color="#FFA9A9A9" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=GlueHighlightBrush}" Color="#FF22D006" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=ShapeConnectionPointBrush}" Color="#FF666666" />
+  <SolidColorBrush x:Key="{dxdiagt:AdornersThemeKeys ResourceKey=SnapLineBrush}" Color="#FF5AC85A" />
+  <SolidColorBrush x:Key="{dxdiagt:DiagramToolboxControlThemeKey ResourceKey=ToolsAreaBackground}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxdiagt:DiagramToolboxControlThemeKey ResourceKey=StencilsSelectorForeground}" Color="#FF000000" />
+  <SolidColorBrush x:Key="{dxdiagt:DiagramPanAndZoomControlThemeKeys ResourceKey=ClientFrameBorderBrush}" Color="#FF4D6AB8" />
+  <SolidColorBrush x:Key="{dxdiagt:DiagramPanAndZoomControlThemeKeys ResourceKey=PreviewFrameBorderBrush}" Color="#FFA0A0A0" />
+  <SolidColorBrush x:Key="{dxdiagt:DiagramPanAndZoomControlThemeKeys ResourceKey=PresenterBackground}" Color="Transparent" />
+  <SolidColorBrush x:Key="{dxdiagt:DiagramPanAndZoomControlThemeKeys ResourceKey=ZoomTrackBarBackground}" Color="Transparent" />
+</ResourceDictionary>

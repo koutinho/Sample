@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg2" Width="32" Height="32">
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <!--Unknown tag: metadata-->
+    <Canvas Name="layer1">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="-1020.3622"/>
+      </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3857" StrokeThickness="1" Stroke="#FFEDEDED" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 7.5862955 1044.8165 7.8665635 -2.5632 -5.259461 -5.3472 z" FillRule="NonZero"/>
+        </Path.Data>
+      </Path>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path38570" Fill="#FFEDEDED" StrokeThickness="1" Stroke="#FFEDEDED" StrokeMiterLimit="4" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 7.5615114 1044.8855 2.6007926 -0.9158 -1.6694453 -1.7006 z" FillRule="NonZero"/>
+        </Path.Data>
+      </Path>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path6450" Fill="#FFEDEDED" StrokeThickness="1" Stroke="#FFEDEDED" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 10.62565 1036.0794 0.558059 0.606 9.874349 -9.9482 -0.517655 -0.5139 z" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path64506" Fill="#FFEDEDED" StrokeThickness="1" Stroke="#FFEDEDED" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 15.703107 1041.2227 0.558059 0.606 9.874349 -9.9482 -0.517655 -0.5139 z" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path6467" Fill="#FFEDEDED" StrokeThickness="1" Stroke="#FFEDEDED" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 12.330175 1038.2201 10.076271 -10.0984 1.878253 1.8782 -10.054175 10.0321 z" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+    </Canvas>
+  </Canvas>
+</Viewbox>

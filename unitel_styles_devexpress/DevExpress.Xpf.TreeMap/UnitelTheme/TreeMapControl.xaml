@@ -1,0 +1,20 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/treemap/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- General -->
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=ControlBorderBrush}" Color="#FFACACAC" />
+  <!-- Group -->
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=GroupBorderBrush}" Color="#FFACACAC" />
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=GroupBackground}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=GroupForeground}" Color="#FF0072C6" />
+  <sys:Double x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=GroupFontSize}">18</sys:Double>
+  <FontWeight x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=GroupFontWeight}">Light</FontWeight>
+  <!-- SubMenu -->
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=SubGroupBackground}" Color="#FFF0F0F0" />
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=SubGroupForeground}" Color="#FF444444" />
+  <sys:Double x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=SubGroupFontSize}">12</sys:Double>
+  <FontWeight x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=SubGroupFontWeight}">Regular</FontWeight>
+  <!-- ToolTip -->
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=ToolTipBackground}" Color="#FF0072C6" />
+  <SolidColorBrush x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=ToolTipForeground}" Color="#FFFFFFFF" />
+  <sys:Double x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=ToolTipFontSize}">18</sys:Double>
+  <FontWeight x:Key="{dxt:TreeMapBrushesThemeKey ResourceKey=ToolTipFontWeight}">Light</FontWeight>
+</ResourceDictionary>

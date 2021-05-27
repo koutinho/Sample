@@ -1,0 +1,27 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/ColumnHeader.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/ExtendedColumnChooser.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/ExcelColumnFilterTreeView.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/ExcelColumnFilter.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/CardTemplates.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/Rows.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/ConditionalFormatting.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/LightweightStyles.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/GridControl.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/GridView.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/LookUpEdit.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/TreeViewControl.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/PrintingTemplates.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/CardViewPrintingTemplates.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/RowIndicator.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/DefaultGridViewStyles.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/FilteringUI/ColumnFilteringUI.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/FilteringUI/FilterEditor.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/FilteringUI/FilterElements.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/FilteringUI/FilteringPanelControl.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/FilteringUI/FilteringPanelVisualElements.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/Generic/FilteringUI/HierarchyFilterElement.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/UnitelTheme/Generic.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

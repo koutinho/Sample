@@ -1,0 +1,190 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:dxer="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/editors/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Editors/Themes/Generic/RangeControl.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <SolidColorBrush x:Key="{dxt:CalendarClientThemeKey ResourceKey=CalendarClientForegroundBrush}" Color="#FFFFFFFF" />
+  <Thickness x:Key="{dxt:RangeControlThemeKey ResourceKey=LeftLabelMargin}" Bottom="1" Left="0" Right="5" Top="1" />
+  <Thickness x:Key="{dxt:RangeControlThemeKey ResourceKey=RightLabelMargin}" Bottom="1" Left="5" Right="0" Top="1" />
+  <!-- CalendarSelectionMarker -->
+  <DataTemplate x:Key="{dxt:CalendarClientThemeKey ResourceKey=CalendarSelectionMarkerTemplate}">
+    <Ellipse Fill="{DynamicResource {dxt:CalendarClientThemeKey ResourceKey=CalendarClientForegroundBrush}}" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="20" />
+  </DataTemplate>
+  <!-- ToolTips -->
+  <DataTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=LabelTemplate}">
+    <Border x:Name="border" Background="#FFB9B9B9" Margin="0,-1,0,1" MinHeight="22" MinWidth="80" VerticalAlignment="Top">
+      <TextBlock Foreground="#FFFFFFFF" HorizontalAlignment="Center" Margin="12,2,12,2" Text="{Binding}" VerticalAlignment="Center" />
+    </Border>
+    <DataTemplate.Triggers>
+      <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+        <Setter Property="Margin" TargetName="border" Value="2,-1,2,1" />
+      </Trigger>
+    </DataTemplate.Triggers>
+  </DataTemplate>
+  <!-- Left & Right Navigation Buttons -->
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=LeftNavigationButtonTemplate}" TargetType="{x:Type Button}">
+    <Grid Background="Transparent" Margin="12,0,0,0" Opacity="0.9">
+      <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+          <VisualState x:Name="Normal">
+            <Storyboard>
+              <ColorAnimation Duration="0" Storyboard.TargetName="Glyph" Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)" To="#FFB9B9B9" />
+            </Storyboard>
+          </VisualState>
+          <VisualState x:Name="MouseOver">
+            <Storyboard>
+              <ColorAnimation Duration="0" Storyboard.TargetName="Glyph" Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)" To="#FF92C0E0" />
+            </Storyboard>
+          </VisualState>
+          <VisualState x:Name="Pressed">
+            <Storyboard>
+              <ColorAnimation Duration="0" Storyboard.TargetName="Glyph" Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)" To="#FF92C0E0" />
+            </Storyboard>
+          </VisualState>
+        </VisualStateGroup>
+      </VisualStateManager.VisualStateGroups>
+      <Ellipse Fill="#FFFFFFFF" Height="34" Stretch="Fill" Width="34" />
+      <Path x:Name="Glyph" Data="F1 M 210,314L 210,312L 218,304L 221,304L 213,312L 230,312L 230,314L 213,314L 221,322L 218,322L 210,314 Z M 220,297C 228.837,297 236,304.164 236,313C 236,321.837 228.836,329 220,329C 211.163,329 204,321.837 204,313C 204,304.164 211.163,297 220,297 Z M 220,299C 212.268,299 206,305.268 206,313C 206,320.732 212.268,327 220,327C 227.732,327 234,320.732 234,313C 234,305.268 227.732,299 220,299 Z " Fill="#FFB9B9B9" Height="32" Stretch="Fill" Width="32" />
+    </Grid>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=RightNavigationButtonTemplate}" TargetType="{x:Type Button}">
+    <Grid Background="Transparent" Margin="0,0,12,0" Opacity="0.9">
+      <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+          <VisualState x:Name="Normal">
+            <Storyboard>
+              <ColorAnimation Duration="0" Storyboard.TargetName="Glyph" Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)" To="#FFB9B9B9" />
+            </Storyboard>
+          </VisualState>
+          <VisualState x:Name="MouseOver">
+            <Storyboard>
+              <ColorAnimation Duration="0" Storyboard.TargetName="Glyph" Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)" To="#FF92C0E0" />
+            </Storyboard>
+          </VisualState>
+          <VisualState x:Name="Pressed">
+            <Storyboard>
+              <ColorAnimation Duration="0" Storyboard.TargetName="Glyph" Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)" To="#FF92C0E0" />
+            </Storyboard>
+          </VisualState>
+        </VisualStateGroup>
+      </VisualStateManager.VisualStateGroups>
+      <Ellipse Fill="#FFFFFFFF" Height="34" Stretch="Fill" Width="34" />
+      <Path x:Name="Glyph" Data="F1 M 260,328L 252,336L 249,336L 257,328L 240,328L 240,326L 257,326L 249,318L 252,318L 260,326L 260,328 Z M 250,311C 258.837,311 266,318.164 266,327C 266,335.837 258.836,343 250,343C 241.163,343 234,335.837 234,327C 234,318.164 241.163,311 250,311 Z M 250,313C 242.268,313 236,319.268 236,327C 236,334.732 242.268,341 250,341C 257.732,341 264,334.732 264,327C 264,319.268 257.732,313 250,313 Z " Fill="#FFB9B9B9" Height="32" Stretch="Fill" Width="32" />
+    </Grid>
+  </ControlTemplate>
+  <!-- Calendar -->
+  <ControlTemplate x:Key="{dxt:CalendarClientThemeKey ResourceKey=CalendarGroupItemTemplate}" TargetType="{x:Type dxer:CalendarGroupItem}">
+    <Border Background="#FFACACAC">
+      <TextBlock Foreground="#BFFFFFFF" Margin="20,0" Text="{TemplateBinding Text}" TextAlignment="Center" VerticalAlignment="Center" />
+    </Border>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:CalendarClientThemeKey ResourceKey=CalendarItemTemplate}" TargetType="{x:Type dxer:CalendarItem}">
+    <Border x:Name="Border" Background="#FFACACAC" BorderThickness="0">
+      <TextBlock x:Name="Text" Foreground="#BFFFFFFF" HorizontalAlignment="Center" Margin="0,10,0,10" Text="{TemplateBinding Text}" TextAlignment="Center" />
+    </Border>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsSelected" Value="True">
+        <Setter Property="Background" TargetName="Border" Value="#FF92C0E0" />
+        <Setter Property="Foreground" TargetName="Text" Value="#BFFFFFFF" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <!-- Range Bar -->
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=BorderTemplate}" TargetType="{x:Type ContentControl}">
+    <Border Background="#FFFFFFFF" BorderBrush="#FFACACAC" BorderThickness="{Binding Path=(dxer:RangeControl.OwnerRangeControl).BorderThickness, RelativeSource={RelativeSource Self}}">
+      <ContentPresenter Margin="1" />
+    </Border>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarRootBorderTemplate}" TargetType="{x:Type ContentControl}">
+    <Border Background="#FFFFFFFF" BorderBrush="#FFACACAC">
+      <ContentPresenter Margin="0,1,0,0" />
+    </Border>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarLeftResizeThumbTemplate}">
+    <Border Background="Transparent" Padding="4,2,2,2">
+      <Border BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,0" Width="3" />
+    </Border>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarRightResizeThumbTemplate}">
+    <Border Background="Transparent" Padding="2,2,4,2">
+      <Border BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,0" Width="3" />
+    </Border>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=LeftSelectionThumbTemplate}" TargetType="{x:Type Thumb}">
+    <Grid x:Name="grid" Background="Transparent" HorizontalAlignment="Left" Width="15">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Border x:Name="Border1" Background="#FFB9B9B9" BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,0" Grid.Column="1" HorizontalAlignment="Right" Width="5" />
+      <Border x:Name="border" Background="#FFFFFFFF" Grid.Column="1" Height="18" Margin="0,0,4,0" Padding="1,1,0,1" Width="7">
+        <Border x:Name="Border2" Background="#FFB9B9B9" Margin="0,0,-3,0">
+          <Border x:Name="border1" BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,0" Margin="2,3,2,3" Width="3" />
+        </Border>
+      </Border>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <DataTrigger Binding="{Binding Path=(dxer:RangeControl.OwnerRangeControl).IsSelectionMoving, RelativeSource={RelativeSource Self}}" Value="True">
+        <Setter Property="Background" TargetName="Border1" Value="#FF999999" />
+        <Setter Property="Background" TargetName="Border2" Value="#FF999999" />
+      </DataTrigger>
+      <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+        <Setter Property="Width" TargetName="grid" Value="30" />
+        <Setter Property="Width" TargetName="Border1" Value="10" />
+        <Setter Property="Width" TargetName="border" Value="14" />
+        <Setter Property="Height" TargetName="border" Value="Auto" />
+        <Setter Property="Margin" TargetName="border" Value="0,-2,8,-2" />
+        <Setter Property="Margin" TargetName="Border2" Value="0,0,-6,0" />
+        <Setter Property="Height" TargetName="border1" Value="22" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxt:RangeControlThemeKey ResourceKey=RightSelectionThumbTemplate}" TargetType="{x:Type Thumb}">
+    <Grid x:Name="grid" Background="Transparent" HorizontalAlignment="Right" Width="15">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Border x:Name="Border1" Background="#FFB9B9B9" BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,0" Grid.Column="0" HorizontalAlignment="Left" Width="5" />
+      <Border x:Name="border" Background="#FFFFFFFF" Grid.Column="0" Height="18" Margin="4,0,0,0" Padding="0,1,1,1" Width="7">
+        <Border x:Name="Border2" Background="#FFB9B9B9" Margin="-3,0,0,0">
+          <Border x:Name="border1" BorderBrush="#FFFFFFFF" BorderThickness="1,0,1,0" Margin="2,3,2,3" Width="3" />
+        </Border>
+      </Border>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <DataTrigger Binding="{Binding Path=(dxer:RangeControl.OwnerRangeControl).IsSelectionMoving, RelativeSource={RelativeSource Self}}" Value="True">
+        <Setter Property="Background" TargetName="Border1" Value="#FF999999" />
+        <Setter Property="Background" TargetName="Border2" Value="#FF999999" />
+      </DataTrigger>
+      <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+        <Setter Property="Width" TargetName="grid" Value="30" />
+        <Setter Property="Width" TargetName="Border1" Value="10" />
+        <Setter Property="Width" TargetName="border" Value="14" />
+        <Setter Property="Height" TargetName="border" Value="Auto" />
+        <Setter Property="Margin" TargetName="border" Value="8,-2,0,-2" />
+        <Setter Property="Margin" TargetName="Border2" Value="-6,0,0,0" />
+        <Setter Property="Height" TargetName="border1" Value="24" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <!-- Styles -->
+  <Style x:Key="{dxt:RangeControlThemeKey ResourceKey=SelectionRectangleStyle}" TargetType="{x:Type Border}">
+    <Setter Property="Background" Value="#7FFFFFFF" />
+  </Style>
+  <Style x:Key="{dxt:RangeControlThemeKey ResourceKey=OutOfRangeAreaBorderStyle}" TargetType="{x:Type Border}">
+    <Setter Property="Background" Value="#BFF0F0F0" />
+  </Style>
+  <Style x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarOutOfRangeBorderStyle}" TargetType="{x:Type Border}">
+    <Setter Property="Background" Value="#3A000000" />
+  </Style>
+  <Style x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarOutOfSelectionBorderStyle}" TargetType="{x:Type Border}">
+    <Setter Property="Background" Value="#FFF0F0F0" />
+  </Style>
+  <Style x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarSelectionBorderStyle}" TargetType="{x:Type Border}">
+    <Setter Property="Background" Value="#FFFFFFFF" />
+  </Style>
+  <Style x:Key="{dxt:RangeControlThemeKey ResourceKey=RangeBarBottomBorderStyle}" TargetType="{x:Type Border}">
+    <Setter Property="Background" Value="#FFFFFFFF" />
+    <Setter Property="Height" Value="13" />
+  </Style>
+</ResourceDictionary>

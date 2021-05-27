@@ -1,0 +1,283 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:dxet="http://schemas.devexpress.com/winfx/2008/xaml/editors/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!--BEGIN WPF-->
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Editors/Themes/Generic/CalcEdit.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Editors/Themes/Generic/CalcEditDisplay.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <!--END WPF-->
+  <Style x:Key="{dxet:CalculatorThemeKey ResourceKey=ButtonOperationStyle}" TargetType="{x:Type Button}">
+    <Setter Property="dx:FocusHelper2.Focusable" Value="False" />
+    <Setter Property="Foreground" Value="#FF0072C6" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Grid x:Name="Control" MinHeight="22" MinWidth="22">
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="MouseOver">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="HoverState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Pressed">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="PressedState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Disabled">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To=".5" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="Opacity" To=".5" />
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+              <VisualStateGroup x:Name="MemoryStates">
+                <VisualState x:Name="EmptyMemory" />
+                <VisualState x:Name="MemoryAssigned">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="MemoryAssignedState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="DefaultState" BorderBrush="#FFACACAC" BorderThickness="1" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFF0F0F0" Offset="0" />
+                  <GradientStop Color="#FFE5E5E5" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Border x:Name="HoverState" BorderBrush="#FF7EABEA" BorderThickness="1" Opacity="0" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFECF3FC" Offset="0" />
+                  <GradientStop Color="#FFDCE9FC" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Border x:Name="PressedState" BorderBrush="#FF5691E5" BorderThickness="1" Opacity="0" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFDAE9FC" Offset="0" />
+                  <GradientStop Color="#FFC4DBFC" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Grid x:Name="MemoryAssignedState" Opacity="0">
+              <Border Background="#1F0072C6" BorderBrush="#FF0072C6" BorderThickness="1" />
+            </Grid>
+            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+              <Setter Property="MinWidth" TargetName="Control" Value="44" />
+              <Setter Property="MinHeight" TargetName="Control" Value="44" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="{dxet:CalculatorThemeKey ResourceKey=ButtonCEStyle}" TargetType="{x:Type Button}">
+    <Setter Property="dx:FocusHelper2.Focusable" Value="False" />
+    <Setter Property="Foreground" Value="#FFCD2610" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Grid x:Name="Control" MinHeight="22" MinWidth="22">
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="MouseOver">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="HoverState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Pressed">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="PressedState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Disabled">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To=".5" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="Opacity" To=".5" />
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+              <VisualStateGroup x:Name="MemoryStates">
+                <VisualState x:Name="EmptyMemory" />
+                <VisualState x:Name="MemoryAssigned">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="MemoryAssignedState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="DefaultState" BorderBrush="#FFACACAC" BorderThickness="1" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFF0F0F0" Offset="0" />
+                  <GradientStop Color="#FFE5E5E5" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Border x:Name="HoverState" BorderBrush="#FF7EABEA" BorderThickness="1" Opacity="0" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFECF3FC" Offset="0" />
+                  <GradientStop Color="#FFDCE9FC" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Border x:Name="PressedState" BorderBrush="#FF5691E5" BorderThickness="1" Opacity="0" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFDAE9FC" Offset="0" />
+                  <GradientStop Color="#FFC4DBFC" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+              <Setter Property="MinWidth" TargetName="Control" Value="44" />
+              <Setter Property="MinHeight" TargetName="Control" Value="44" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <Style x:Key="{dxet:CalculatorThemeKey ResourceKey=ButtonDigitStyle}" TargetType="{x:Type Button}">
+    <Setter Property="dx:FocusHelper2.Focusable" Value="False" />
+    <Setter Property="Foreground" Value="#FF3C3C3C" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Grid x:Name="Control" MinHeight="22" MinWidth="22">
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="MouseOver">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="HoverState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Pressed">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="PressedState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Disabled">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To=".5" />
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="contentPresenter" Storyboard.TargetProperty="Opacity" To=".5" />
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+              <VisualStateGroup x:Name="MemoryStates">
+                <VisualState x:Name="EmptyMemory" />
+                <VisualState x:Name="MemoryAssigned">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="MemoryAssignedState" Storyboard.TargetProperty="Opacity" To="1" />
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="DefaultState" BorderBrush="#FFACACAC" BorderThickness="1" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFF0F0F0" Offset="0" />
+                  <GradientStop Color="#FFE5E5E5" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Border x:Name="HoverState" BorderBrush="#FF7EABEA" BorderThickness="1" Opacity="0" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFECF3FC" Offset="0" />
+                  <GradientStop Color="#FFDCE9FC" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <Border x:Name="PressedState" BorderBrush="#FF5691E5" BorderThickness="1" Opacity="0" Padding="1">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <GradientStop Color="#FFDAE9FC" Offset="0" />
+                  <GradientStop Color="#FFC4DBFC" Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+            </Border>
+            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+              <Setter Property="MinWidth" TargetName="Control" Value="44" />
+              <Setter Property="MinHeight" TargetName="Control" Value="44" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <ControlTemplate x:Key="{dxet:CalculatorThemeKey ResourceKey=DisplayTemplate}" TargetType="{x:Type ContentControl}">
+    <Grid>
+      <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+          <VisualState x:Name="Normal" />
+          <VisualState x:Name="MouseOver" />
+          <VisualState x:Name="Pressed" />
+          <VisualState x:Name="Disabled">
+            <Storyboard>
+              <DoubleAnimation Duration="0" Storyboard.TargetName="DefaultState" Storyboard.TargetProperty="Opacity" To="0" />
+              <DoubleAnimation Duration="0" Storyboard.TargetName="DisabledState" Storyboard.TargetProperty="Opacity" To="1" />
+              <ColorAnimation Duration="0" Storyboard.TargetName="Content" Storyboard.TargetProperty="(ContentControl.Foreground).(SolidColorBrush.Color)" To="#FFACACAC" />
+            </Storyboard>
+          </VisualState>
+        </VisualStateGroup>
+      </VisualStateManager.VisualStateGroups>
+      <Grid>
+        <Border x:Name="DisabledState" Background="#FFFFFFFF" BorderBrush="#FFC6C6C6" BorderThickness="1" Opacity="0" />
+        <Border x:Name="DefaultState" Background="#FFFFFFFF" BorderBrush="#FFC6C6C6" BorderThickness="1" />
+        <ContentControl x:Name="Content" dx:FocusHelper2.Focusable="False" Margin="0,0,2,2" Template="{DynamicResource {dxet:CalculatorThemeKey ResourceKey=DisplayContentTemplate}}">
+          <ContentControl.Foreground>
+            <SolidColorBrush Color="#FF0072C6" />
+          </ContentControl.Foreground>
+        </ContentControl>
+      </Grid>
+    </Grid>
+  </ControlTemplate>
+  <Style x:Key="{dxet:CalculatorThemeKey ResourceKey=DisplayStyle}" TargetType="{x:Type ContentControl}">
+    <Setter Property="dx:FocusHelper2.Focusable" Value="False" />
+    <Setter Property="FontSize" Value="21" />
+    <Setter Property="Margin" Value="0,0,0,10" />
+    <Setter Property="Template" Value="{DynamicResource {dxet:CalculatorThemeKey ResourceKey=DisplayTemplate}}" />
+  </Style>
+  <ControlTemplate x:Key="{dxet:CalculatorThemeKey ResourceKey=BorderTemplate}" TargetType="{x:Type ContentControl}">
+    <Grid>
+      <Grid.Resources>
+        <dx:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+        <dx:BoolToVisibilityInverseConverter x:Key="BoolToVisibilityInverseConverter" />
+        <dx:BoolToThicknessConverter x:Key="BoolToThicknessConverter" ThicknessFalse="11" ThicknessTrue="13" />
+      </Grid.Resources>
+      <Border Background="#FFFFFFFF" BorderBrush="#FFC6C6C6" BorderThickness="1" Visibility="{Binding ShowBorder, Converter={StaticResource BoolToVisibilityConverter}}" />
+      <Grid Background="#FFFFFFFF" Visibility="{Binding ShowBorder, Converter={StaticResource BoolToVisibilityInverseConverter}}" />
+      <ContentPresenter Margin="{Binding ShowBorder, Converter={StaticResource BoolToThicknessConverter}}" />
+    </Grid>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxet:CalculatorThemeKey ResourceKey=PopupContentContainerTemplate}" TargetType="{x:Type ContentControl}">
+    <Border Background="#FFFFFFFF" Padding="11">
+      <ContentPresenter />
+    </Border>
+  </ControlTemplate>
+</ResourceDictionary>

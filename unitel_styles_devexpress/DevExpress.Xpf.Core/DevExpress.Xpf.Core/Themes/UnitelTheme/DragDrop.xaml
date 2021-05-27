@@ -1,0 +1,10 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <SolidColorBrush x:Key="{dxt:DragDropThemeKey ResourceKey=DropMarkerBackground}" Color="White" />
+  <SolidColorBrush x:Key="{dxt:DragDropThemeKey ResourceKey=DropMarkerBorderBrush}" Color="#FF0072C6" />
+  <SolidColorBrush x:Key="{dxt:DragDropThemeKey ResourceKey=DragHintBackground}" Color="White" />
+  <SolidColorBrush x:Key="{dxt:DragDropThemeKey ResourceKey=DragHintBorderBrush}" Color="#FFA2A2A2" />
+  <SolidColorBrush x:Key="{dxt:DragDropThemeKey ResourceKey=DragHintCaptionForeground}" Color="#FF0072C6" />
+  <FontWeight x:Key="{dxt:DragDropThemeKey ResourceKey=DragHintCaptionFontWeight}">Normal</FontWeight>
+  <sys:Double x:Key="{dxt:DragDropThemeKey ResourceKey=DragHintCaptionFontSize}">14</sys:Double>
+  <SolidColorBrush x:Key="{dxt:DragDropThemeKey ResourceKey=DragHintDescriptionForeground}" Color="#FF444444" />
+</ResourceDictionary>

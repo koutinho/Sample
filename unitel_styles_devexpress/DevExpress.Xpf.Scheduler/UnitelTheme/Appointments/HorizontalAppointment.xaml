@@ -1,0 +1,61 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduler" xmlns:dxschd="http://schemas.devexpress.com/winfx/2008/xaml/scheduler/internal" xmlns:dxscht="http://schemas.devexpress.com/winfx/2008/xaml/scheduler/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <dxschd:ToolTipVisibilityToVisibilityConverter x:Key="ToolTipVisibilityConverter" />
+  <dx:BooleanToVisibilityConverter x:Key="boolToVisibilityConverter" />
+  <dxschd:AppointmentColorConverter x:Key="appointmentColorConverter" />
+  <dxschd:BoolToThicknessConverter x:Key="selectionBoolToThicknessConverter" ThicknessWhenFalse="1" ThicknessWhenTrue="1" />
+  <dxschd:AppointmentStatusDisplayTypeToDoubleConverter x:Key="StatusDisplayTypeToDoubleConverter" DefaultValue="5" />
+  <dxschd:AppointmentStatusDisplayTypeToVisibilityConverter x:Key="AppointmentStatusDisplayTypeToVisibilityConverter" />
+  <Color x:Key="defaultBorderColor">#FF0072C6</Color>
+  <SolidColorBrush x:Key="borderBrush.IsSelected" Color="#FF0072C6" />
+  <DataTemplate x:Key="{dxscht:SchedulerViewThemeKey ResourceKey=AppointmentToolTipContentTemplate}">
+    <TextBlock Text="{Binding ToolTipText}" />
+  </DataTemplate>
+  <ControlTemplate x:Key="{dxscht:SchedulerViewThemeKey ResourceKey=HorizontalAppointmentTemplate}" TargetType="{x:Type dxschd:VisualHorizontalAppointmentControl}">
+    <Grid x:Name="PART_ToolTipContainer" dxsch:SchedulerControl.HitTestType="AppointmentContent" dxsch:SchedulerControl.SelectableIntervalViewInfo="{TemplateBinding ViewInfo}" Margin="0,0,1,1">
+      <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="DraggedStates">
+          <VisualState x:Name="NotDragged">
+            <Storyboard>
+              <DoubleAnimation Duration="0:0:0.15" Storyboard.TargetName="AppointmentBorder" Storyboard.TargetProperty="Opacity" To="1" />
+            </Storyboard>
+          </VisualState>
+          <VisualState x:Name="Dragged">
+            <Storyboard>
+              <DoubleAnimation Duration="0:0:0.15" Storyboard.TargetName="AppointmentBorder" Storyboard.TargetProperty="Opacity" To="0.3" />
+            </Storyboard>
+          </VisualState>
+        </VisualStateGroup>
+      </VisualStateManager.VisualStateGroups>
+      <ToolTipService.ToolTip>
+        <ToolTip Content="{TemplateBinding ViewInfo}" ContentTemplate="{Binding ViewInfo.View.AppointmentToolTipContentTemplate, RelativeSource={RelativeSource TemplatedParent}}" Visibility="{Binding ViewInfo.View.AppointmentToolTipVisibility, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource ToolTipVisibilityConverter}}"></ToolTip>
+      </ToolTipService.ToolTip>
+      <dxschd:BaseBorder x:Name="AppointmentBorder" DefaultBorderThickness="{Binding ViewInfo.Selected, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource selectionBoolToThicknessConverter}}" DefaultCornerRadius="0" HasBottomBorder="{Binding ViewInfo.HasBottomBorder, RelativeSource={RelativeSource TemplatedParent}}" HasLeftBorder="{Binding ViewInfo.HasLeftBorder, RelativeSource={RelativeSource TemplatedParent}}" HasRightBorder="{Binding ViewInfo.HasRightBorder, RelativeSource={RelativeSource TemplatedParent}}" HasTopBorder="{Binding ViewInfo.HasTopBorder, RelativeSource={RelativeSource TemplatedParent}}" IsSelected="{Binding ViewInfo.Selected, RelativeSource={RelativeSource TemplatedParent}}">
+        <dxschd:BaseBorder.Style>
+          <Style TargetType="{x:Type dxschd:BaseBorder}">
+            <Setter Property="BorderBrush" Value="{Binding ViewInfo.LabelBrush, RelativeSource={RelativeSource TemplatedParent}}" />
+            <Style.Triggers>
+              <Trigger Property="IsSelected" Value="True">
+                <Setter Property="BorderBrush" Value="{StaticResource borderBrush.IsSelected}" />
+              </Trigger>
+            </Style.Triggers>
+          </Style>
+        </dxschd:BaseBorder.Style>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition x:Name="ContentContainerStatusRow" Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Border x:Name="Status" Background="#FFD6D6D6" BorderBrush="{Binding ViewInfo.LabelColor, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource appointmentColorConverter}, ConverterParameter={StaticResource defaultBorderColor}}" Height="{Binding StatusDisplayType, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource StatusDisplayTypeToDoubleConverter}}" Visibility="{Binding StatusDisplayType, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource AppointmentStatusDisplayTypeToVisibilityConverter}}">
+            <dxsch:AppointmentStatusControl Background="#FFD6D6D6" Orientation="Horizontal" ViewInfo="{TemplateBinding ViewInfo}">
+              <Border Background="{Binding ViewInfo.Status.Brush, RelativeSource={RelativeSource TemplatedParent}}" BorderBrush="{Binding ViewInfo.LabelColor, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource appointmentColorConverter}, ConverterParameter={StaticResource defaultBorderColor}}" />
+            </dxsch:AppointmentStatusControl>
+          </Border>
+          <Border x:Name="border" Background="{Binding ViewInfo.LabelBrush, RelativeSource={RelativeSource TemplatedParent}}" Grid.Row="1" />
+          <ContentPresenter x:Name="PART_Content" Content="{TemplateBinding ViewInfo}" ContentTemplate="{TemplateBinding ContentTemplate}" Grid.Row="1" Margin="6,0,6,0" />
+        </Grid>
+      </dxschd:BaseBorder>
+      <Rectangle Cursor="SizeWE" dxsch:SchedulerControl.HitTestType="AppointmentResizingLeftEdge" dxsch:SchedulerControl.SelectableIntervalViewInfo="{TemplateBinding ViewInfo}" Fill="#00000000" HorizontalAlignment="Left" IsHitTestVisible="True" Visibility="{Binding ViewInfo.CanResizeStart, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource boolToVisibilityConverter}}" Width="5" />
+      <Rectangle Cursor="SizeWE" dxsch:SchedulerControl.HitTestType="AppointmentResizingRightEdge" dxsch:SchedulerControl.SelectableIntervalViewInfo="{TemplateBinding ViewInfo}" Fill="#00000000" HorizontalAlignment="Right" IsHitTestVisible="True" Visibility="{Binding Path=ViewInfo.CanResizeEnd, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource boolToVisibilityConverter}}" Width="5" />
+    </Grid>
+  </ControlTemplate>
+</ResourceDictionary>

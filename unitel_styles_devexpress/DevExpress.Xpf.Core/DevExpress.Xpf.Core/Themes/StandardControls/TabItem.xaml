@@ -1,0 +1,113 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/StandardControls/Brushes.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/StandardControls/SharedResources.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <Style x:Key="{dxdst:DefaultStyleThemeKey FullName=System.Windows.Controls.TabItem}" TargetType="{x:Type TabItem}">
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    <Setter Property="BorderBrush" Value="{StaticResource TabItem.BorderBrush}" />
+    <Setter Property="Background" Value="{StaticResource TabItem.Background}" />
+    <Setter Property="Foreground" Value="{StaticResource TabItem.Foreground}" />
+    <Setter Property="Padding" Value="{StaticResource TabItem.Padding}" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type TabItem}">
+          <Grid x:Name="Root" Margin="0,0,2,0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+            <Border x:Name="Border" Background="{TemplateBinding BorderBrush}">
+              <Grid>
+                <Border x:Name="DefaultState" Background="{TemplateBinding Background}" Padding="{StaticResource TabItem.SelectedState.Top.Item.Padding}" />
+                <Border x:Name="HoverState" Background="{StaticResource TabItem.HoverState.Background}" Opacity="0" Padding="{StaticResource TabItem.SelectedState.Top.Item.Padding}" />
+                <Border x:Name="SelectedState" Background="{StaticResource TabItem.SelectedState.Background}" Opacity="0" Padding="{StaticResource TabItem.SelectedState.Top.Item.Padding}" />
+                <ContentPresenter x:Name="Content" ContentSource="Header" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" />
+              </Grid>
+            </Border>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter Property="Opacity" TargetName="HoverState" Value="1" />
+            </Trigger>
+            <Trigger Property="IsSelected" Value="True">
+              <Setter Property="Opacity" TargetName="SelectedState" Value="1" />
+              <Setter Property="Background" TargetName="Border" Value="{StaticResource TabItem.SelectedState.BorderBrush}" />
+              <Setter Property="Foreground" Value="{StaticResource TabItem.InactiveState.Foreground}" />
+            </Trigger>
+            <Trigger Property="TabStripPlacement" Value="Top">
+              <Setter Property="Margin" TargetName="Root" Value="0,0,-1,0" />
+              <Setter Property="Padding" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Top.Item.Padding}" />
+              <Setter Property="Margin" TargetName="Content" Value="{StaticResource TabItem.TopPadding}" />
+              <Setter Property="VerticalAlignment" TargetName="Content" Value="Top" />
+            </Trigger>
+            <Trigger Property="TabStripPlacement" Value="Bottom">
+              <Setter Property="Margin" TargetName="Root" Value="0,0,-1,0" />
+              <Setter Property="Padding" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Bottom.Item.Padding}" />
+              <Setter Property="Margin" TargetName="Content" Value="{StaticResource TabItem.BottomPadding}" />
+              <Setter Property="VerticalAlignment" TargetName="Content" Value="Bottom" />
+            </Trigger>
+            <Trigger Property="TabStripPlacement" Value="Left">
+              <Setter Property="Margin" TargetName="Root" Value="0,0,0,-1" />
+              <Setter Property="Padding" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Left.Item.Padding}" />
+              <Setter Property="HorizontalAlignment" TargetName="Content" Value="Left" />
+            </Trigger>
+            <Trigger Property="TabStripPlacement" Value="Right">
+              <Setter Property="Margin" TargetName="Root" Value="0,0,0,-1" />
+              <Setter Property="Padding" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Right.Item.Padding}" />
+              <Setter Property="HorizontalAlignment" TargetName="Content" Value="Right" />
+            </Trigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsSelected" Value="True" />
+                <Condition Property="TabStripPlacement" Value="Top" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Margin" TargetName="Root" Value="{StaticResource TabItem.SelectedState.Top.Root.Margin}" />
+              <Setter Property="Margin" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Top.Item.Margin}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsSelected" Value="True" />
+                <Condition Property="TabStripPlacement" Value="Bottom" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Margin" TargetName="Root" Value="{StaticResource TabItem.SelectedState.Bottom.Root.Margin}" />
+              <Setter Property="Margin" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Bottom.Item.Margin}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsSelected" Value="True" />
+                <Condition Property="TabStripPlacement" Value="Left" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Margin" TargetName="Root" Value="{StaticResource TabItem.SelectedState.Left.Root.Margin}" />
+              <Setter Property="Margin" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Left.Item.Margin}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsSelected" Value="True" />
+                <Condition Property="TabStripPlacement" Value="Right" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Margin" TargetName="Root" Value="{StaticResource TabItem.SelectedState.Right.Root.Margin}" />
+              <Setter Property="Margin" TargetName="Border" Value="{StaticResource TabItem.SelectedState.Right.Item.Margin}" />
+            </MultiTrigger>
+            <MultiTrigger>
+              <MultiTrigger.Conditions>
+                <Condition Property="IsSelected" Value="False" />
+                <Condition Property="IsMouseOver" Value="True" />
+              </MultiTrigger.Conditions>
+              <Setter Property="Background" TargetName="Border" Value="{StaticResource TabItem.HoverState.BorderBrush}" />
+              <Setter Property="Foreground" Value="{StaticResource TabItem.HoverState.Foreground}" />
+            </MultiTrigger>
+            <Trigger Property="IsFocused" Value="True">
+              <Setter Property="TextBlock.Foreground" TargetName="Content" Value="{StaticResource TabItem.SelectedState.Foreground}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Opacity" TargetName="Content" Value="0.35" />
+            </Trigger>
+            <Trigger Property="dx:ThemeManager.IsTouchEnabled" Value="True">
+              <Setter Property="Margin" TargetName="Content" Value="12" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+</ResourceDictionary>

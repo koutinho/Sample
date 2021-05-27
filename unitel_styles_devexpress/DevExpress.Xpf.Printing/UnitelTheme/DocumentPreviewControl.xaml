@@ -1,0 +1,12 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxpt="http://schemas.devexpress.com/winfx/2008/xaml/printing/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DataTemplate x:Key="{dxpt:NewDocumentViewerThemeKey ResourceKey=PageBorderTemplate}">
+    <Grid>
+      <Border x:Name="Selection" BorderBrush="#FFC6C6C6" BorderThickness="1" Margin="-1" />
+    </Grid>
+    <DataTemplate.Triggers>
+      <DataTrigger Binding="{Binding IsSelected}" Value="true">
+        <Setter Property="BorderBrush" TargetName="Selection" Value="#FF0072C6" />
+      </DataTrigger>
+    </DataTemplate.Triggers>
+  </DataTemplate>
+</ResourceDictionary>

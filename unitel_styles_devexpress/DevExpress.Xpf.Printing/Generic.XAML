@@ -1,0 +1,11 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:core="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/PreviewSurface.xaml" />
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/DialogsTemplates.xaml" />
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/NavigationPane.xaml" />
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/ParametersPanel.xaml" />
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/DocumentPreviewControl.xaml" />
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/DateRangeEditor.xaml" />
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Printing/Generic/WinImageEdit.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

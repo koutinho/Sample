@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys">
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/AppointmentControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/Buttons.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/CellControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/HeaderControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/MoreButtonsControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/NavigationControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/ResourceNavigator.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/SchedulerScrollViewer.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/TimeIndicatorControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/TimeMarkerControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/TimeRulerCellControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Controls/TimeRulerHeaderControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Editors/AppointmentLabelEdit.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Editors/AppointmentResourceEdit.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Editors/AppointmentResourcesEdit.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Editors/AppointmentStatusEdit.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Editors/TimeZoneEdit.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Editors/InplaceEditorControl.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Scheduler/DateNavigationPanel.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Scheduler/ResourceTree.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Scheduler/Scheduler.xaml}" />
+    <dxdst:ResourceDictionaryEx Source="{dx:SchedulingResource Generic/Scheduler/Views.xaml}" />
+  </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,27 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:dxschd="http://schemas.devexpress.com/winfx/2008/xaml/scheduler/internal" xmlns:dxscht="http://schemas.devexpress.com/winfx/2008/xaml/scheduler/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!--BEGIN WPF-->
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Scheduler/UnitelTheme/Colors.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <!--END WPF-->
+  <sys:Double x:Key="{dxscht:DayViewThemeKey ResourceKey=TimeRulersMinWidth}">40</sys:Double>
+  <Thickness x:Key="{dxscht:DayViewThemeKey ResourceKey=TimeRulerMargin}">0</Thickness>
+  <Style x:Key="{dxscht:DayViewThemeKey ResourceKey=TimeRulerFontStyle}" TargetType="{x:Type TextBlock}">
+    <Setter Property="Foreground" Value="{StaticResource TimeRulerTextForeground}" />
+  </Style>
+  <DataTemplate x:Key="{dxscht:DayViewThemeKey ResourceKey=TimeRulerMinuteItemTemplate}">
+    <Grid MinWidth="22" VerticalAlignment="Top">
+      <Border Background="#FFD6D6D6" Height="1" HorizontalAlignment="Right" Margin="0,-1,0,0" VerticalAlignment="Top" Width="16" />
+      <TextBlock FontSize="11" HorizontalAlignment="Left" Margin="35,2,5,0" SnapsToDevicePixels="True" Style="{DynamicResource {dxscht:DayViewThemeKey ResourceKey=TimeRulerFontStyle}}" Text="{Binding Caption}" VerticalAlignment="Top" />
+    </Grid>
+  </DataTemplate>
+  <DataTemplate x:Key="{dxscht:DayViewThemeKey ResourceKey=TimeRulerHourItemTemplate}">
+    <Grid dxschd:SharedSizePanel.Span="{Binding MinuteItems.Count}" MinWidth="45" VerticalAlignment="Top">
+      <Border Background="#FFD6D6D6" Height="1" Margin="0,-1,0,0" VerticalAlignment="Top" />
+      <TextBlock FontSize="16" HorizontalAlignment="Right" Margin="2,0,24,0" SnapsToDevicePixels="True" Style="{DynamicResource {dxscht:DayViewThemeKey ResourceKey=TimeRulerFontStyle}}" Text="{Binding Caption}" VerticalAlignment="Top" />
+    </Grid>
+  </DataTemplate>
+  <ControlTemplate x:Key="{dxscht:DayViewThemeKey ResourceKey=TimeRulerHeaderSeparatorTemplate}">
+    <Rectangle Fill="#FFD6D6D6" Height="1" VerticalAlignment="Top" />
+  </ControlTemplate>
+</ResourceDictionary>

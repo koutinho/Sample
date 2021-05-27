@@ -1,0 +1,74 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxbt="http://schemas.devexpress.com/winfx/2008/xaml/bars/themekeys" xmlns:dxcn="http://schemas.devexpress.com/winfx/2008/xaml/core/internal" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" xmlns:dxrt="http://schemas.devexpress.com/winfx/2008/xaml/ribbon/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!--BEGIN WPF-->
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/BarItems.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/DropDownGallery.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/InRibbonGallery.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/QuickAccessToolbar.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/Ribbon.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonHeader.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonControlBoxButton.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonPage.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonPageCategory.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonPageGroup.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonStatusBar.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/BackstageButtonItem.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/BackstageTabItem.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/BackstageSeparatorItem.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/BackstageView.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/ApplicationMenu.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/ApplicationButton.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonWindow.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/RibbonAeroWindow.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/DXTreeView.xaml" />
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Ribbon/UnitelTheme/DXTreeViewItem.xaml" />
+    <!--
+          skipped
+          Source ={dx:RibbonResource Themes/UnitelTheme/RibbonWindow.xaml, DenyXBAP=True}
+          ignoreSource = RibbonWindow.xaml, DenyXBAP=True-->
+  </ResourceDictionary.MergedDictionaries>
+  <!--END WPF-->
+  <SolidColorBrush x:Key="ThemeColorsThemeKey_WhiteForegroundColor" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="ThemeColorsThemeKey_BlackForegroundColor" Color="#FF3C3C3C" />
+  <!--#include ..\DevExpress.Xpf.Core\DevExpress.Xpf.Core\Bars\Themes\UnitelTheme\SubMenuBarControl.xaml-->
+  <!--#include \UnitelTheme\BarItems.xaml-->
+  <!--#include \UnitelTheme\DropDownGallery.xaml-->
+  <!--#include \UnitelTheme\InRibbonGallery.xaml-->
+  <!--#include \UnitelTheme\QuickAccessToolbar.xaml-->
+  <!--#include \UnitelTheme\Ribbon.xaml-->
+  <!--#include \UnitelTheme\RibbonHeader.xaml-->
+  <!--#include \UnitelTheme\RibbonPage.xaml-->
+  <!--#include \UnitelTheme\RibbonPageCategory.xaml-->
+  <!--#include \UnitelTheme\RibbonPageGroup.xaml-->
+  <!--#include \UnitelTheme\RibbonStatusBar.xaml-->
+  <!--#include \UnitelTheme\BackstageButtonItem.xaml-->
+  <!--#include \UnitelTheme\BackstageTabItem.xaml-->
+  <!--#include \UnitelTheme\BackstageSeparatorItem.xaml-->
+  <!--#include \UnitelTheme\BackstageView.xaml-->
+  <!--#include \UnitelTheme\ApplicationMenu.xaml-->
+  <!--#include \UnitelTheme\ApplicationButton.xaml-->
+  <!--#include \UnitelTheme\DXTreeView.xaml-->
+  <!--#include \UnitelTheme\DXTreeViewItem.xaml-->
+  <!--#include ..\DevExpress.Xpf.Core\DevExpress.Xpf.Core\Bars\Themes\UnitelTheme\BarControl.xaml-->
+  <!--#include ..\DevExpress.Xpf.Core\DevExpress.Xpf.Core\Bars\Themes\UnitelTheme\SubMenuBarControl.xaml-->
+  <!--#include ..\DevExpress.Xpf.Core\DevExpress.Xpf.Core\Bars\Themes\Generic\SubMenuBarControl.xaml-->
+  <!--#include \Generic\BarItems.xaml-->
+  <!--#include \Generic\DropDownGallery.xaml-->
+  <!--#include \Generic\InRibbonGallery.xaml-->
+  <!--#include \Generic\QuickAccessToolbar.xaml-->
+  <!--#include \Generic\Ribbon.xaml-->
+  <!--#include \Generic\RibbonHeader.xaml-->
+  <!--#include \Generic\RibbonPage.xaml-->
+  <!--#include \Generic\RibbonPageCategory.xaml-->
+  <!--#include \Generic\RibbonPageGroup.xaml-->
+  <!--#include \Generic\RibbonStatusBar.xaml-->
+  <!--#include \Generic\BackstageButtonItem.xaml-->
+  <!--#include \Generic\BackstageTabItem.xaml-->
+  <!--#include \Generic\BackstageSeparatorItem.xaml-->
+  <!--#include \Generic\BackstageView.xaml-->
+  <!--#include \Generic\ApplicationMenu.xaml-->
+  <!--#include \Generic\ApplicationButton.xaml-->
+  <!--#include \Generic\DXTreeView.xaml-->
+  <!--#include \Generic\DXTreeViewItem.xaml-->
+  <!--#include \Generic\IndependentPart.xaml-->
+</ResourceDictionary>

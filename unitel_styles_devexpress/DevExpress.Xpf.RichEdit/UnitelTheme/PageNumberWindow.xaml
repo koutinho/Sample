@@ -1,0 +1,7 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxret="http://schemas.devexpress.com/winfx/2008/xaml/richedit/themekeys" xmlns:dxreui="http://schemas.devexpress.com/winfx/2008/xaml/richedit" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ControlTemplate x:Key="{dxret:RichEditControlThemeKey ResourceKey=PageNumberWindowControlTemplate}" TargetType="{x:Type dxreui:PageNumberWindow}">
+    <Border Background="#FFD6D6D6" Padding="12,5,12,5" SnapsToDevicePixels="True" UseLayoutRounding="True">
+      <TextBlock FontSize="13" Foreground="#FF3C3C3C" Text="{TemplateBinding Text}" UseLayoutRounding="True" />
+    </Border>
+  </ControlTemplate>
+</ResourceDictionary>

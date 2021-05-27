@@ -1,0 +1,58 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ControlTemplate x:Key="EditControlErrorTemplate">
+        <StackPanel>
+            <AdornedElementPlaceholder
+                Name="Adorned"/>
+            <TextBlock
+                Foreground="Red"
+                Background="Yellow"                
+                Padding="5,2,5,2"
+                Text="{Binding ElementName=Adorned, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}"/>
+        </StackPanel>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="EditControlHorizontalErrorTemplate">
+        <StackPanel Orientation="Horizontal">
+            <AdornedElementPlaceholder
+                Name="Adorned"/>
+            <TextBlock
+                Foreground="Red"
+                Background="Yellow"
+                Padding="5,2,5,2"
+                VerticalAlignment="Center"
+                Text="{Binding ElementName=Adorned, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}"/>
+        </StackPanel>
+    </ControlTemplate>
+
+    <Style x:Key="EditControlStyle" TargetType="Control" >
+        <Setter Property="Validation.ErrorTemplate" Value="{StaticResource EditControlErrorTemplate}" />
+    </Style>
+
+    <Style TargetType="ComboBox" BasedOn="{StaticResource EditControlStyle}">
+        <Setter Property="Padding" Value="3 5 3 5" />
+    </Style>
+
+    <Style TargetType="TextBox" BasedOn="{StaticResource EditControlStyle}">
+        <Setter Property="Padding" Value="1 3 1 3" />
+        <Setter Property="Foreground" Value="#FF575756"/>
+        <Setter Property="FontFamily" Value="Helios-Cond-Lite, Arial"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Style.Triggers>
+            <Trigger Property="IsReadOnly" Value="True">
+                <Setter Property="Background" Value="#FFF5F5F5"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="CommentTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+        <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+        <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="TextWrapping" Value="NoWrap" />
+        <Setter Property="AcceptsReturn" Value="True" />
+        <Setter Property="MinLines" Value="3" />
+    </Style>
+   
+</ResourceDictionary>

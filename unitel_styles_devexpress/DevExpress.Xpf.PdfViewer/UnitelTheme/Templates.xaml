@@ -1,0 +1,67 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxbt="http://schemas.devexpress.com/winfx/2008/xaml/bars/themekeys" xmlns:dxcn="http://schemas.devexpress.com/winfx/2008/xaml/core/internal" xmlns:dxpdf="http://schemas.devexpress.com/winfx/2008/xaml/pdf" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:themes="http://schemas.devexpress.com/winfx/2008/xaml/pdf/themekeys" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.PdfViewer/Generic/Templates.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <SolidColorBrush x:Key="{themes:PdfViewerThemeKey ResourceKey=PdfCommentViewerSelectionBrush}" Color="#FFCDE6F7" />
+  <SolidColorBrush x:Key="{themes:PdfViewerThemeKey ResourceKey=PdfCommentViewerCommentDateForegroundBrush}" Color="#8A000000" />
+  <SolidColorBrush x:Key="CurrentDateButtonForeground" Color="#FF3C3C3C" />
+  <Color x:Key="{themes:PdfViewerThemeKey ResourceKey=HighlightSearchTextColor}">#7F0072C6</Color>
+  <SolidColorBrush x:Key="{themes:PdfViewerThemeKey ResourceKey=HighlightSelectionColor}" Color="#0072C6" Opacity="0.5" />
+  <Color x:Key="{themes:PdfViewerThemeKey ResourceKey=CaretColor}">#FF000000</Color>
+  <Color x:Key="{themes:PdfViewerThemeKey ResourceKey=StartScreenCaptionForegroundColor}">#FF3C3C3C</Color>
+  <Color x:Key="{themes:PdfViewerThemeKey ResourceKey=StartScreenDocumentLinkForegroundColor}">#FF0072C6</Color>
+  <Color x:Key="{themes:PdfViewerThemeKey ResourceKey=StartScreenOpenDocumentForegroundColor}">#FF3C3C3C</Color>
+  <Color x:Key="{themes:PdfViewerThemeKey ResourceKey=LoadingDocumentLinkForegroundColor}">#FF0072C6</Color>
+  <sys:Double x:Key="{themes:PdfViewerThemeKey ResourceKey=PrintDialogRightColumnWidth}">120</sys:Double>
+  <GridLength x:Key="{themes:PdfViewerThemeKey ResourceKey=PrintDialogRightColumnGridLength}">120</GridLength>
+  <LinearGradientBrush x:Key="{themes:PdfViewerThemeKey ResourceKey=PdfPresenterControlBackgroundBrush}" EndPoint="0.5,1" StartPoint="0.5,0">
+    <GradientStop Color="#FFFFFFFF" Offset="0" />
+    <GradientStop Color="#FFF0F0F0" Offset="1" />
+  </LinearGradientBrush>
+  <ControlTemplate x:Key="{themes:PdfViewerThemeKey ResourceKey=PdfPageControlItemTemplate}" TargetType="{x:Type dxpdf:PdfPageControlItem}">
+    <Grid>
+      <Border x:Name="Selection" BorderBrush="#FFC6C6C6" BorderThickness="1" Margin="-1" />
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsSelected" Value="true">
+        <Setter Property="BorderBrush" TargetName="Selection" Value="#FF0072C6" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{themes:PdfViewerThemeKey ResourceKey=PdfThumbnailControlItemTemplate}" TargetType="{x:Type dxpdf:PdfThumbnailPageControlItem}">
+    <Grid>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="Shadow" Grid.Row="0">
+          <Border BorderBrush="#FF000000" BorderThickness="5" CornerRadius="5" Margin="-6" Opacity="0.01" />
+          <Border BorderBrush="#FF000000" BorderThickness="4" CornerRadius="4" Margin="-5" Opacity="0.01" />
+          <Border BorderBrush="#FF000000" BorderThickness="3" CornerRadius="3" Margin="-4" Opacity="0.02" />
+          <Border BorderBrush="#FF000000" BorderThickness="2" CornerRadius="2" Margin="-3" Opacity="0.03" />
+          <Border BorderBrush="#FF000000" BorderThickness="1" CornerRadius="1" Margin="-2" Opacity="0.05" />
+          <Border BorderBrush="#FFFFFFFF" BorderThickness="1" Margin="-1" />
+        </Grid>
+        <Border x:Name="Highlight" BorderBrush="#7F0072C6" BorderThickness="6" Grid.Row="0" Margin="-7" Opacity="0" />
+        <Border x:Name="Selection" BorderBrush="#FF0072C6" BorderThickness="2" Grid.Row="0" Margin="-9" Opacity="0" />
+        <TextBlock Grid.Row="1" Margin="0,12,0,10" Text="{Binding Path=PageNumber}" TextAlignment="Center" />
+      </Grid>
+    </Grid>
+    <ControlTemplate.Triggers>
+      <Trigger Property="IsSelected" Value="true">
+        <Setter Property="Opacity" TargetName="Selection" Value="1" />
+      </Trigger>
+      <Trigger Property="IsHighlighted" Value="true">
+        <Setter Property="Opacity" TargetName="Highlight" Value="1" />
+      </Trigger>
+    </ControlTemplate.Triggers>
+  </ControlTemplate>
+  <DataTemplate x:Key="{themes:PdfViewerThemeKey ResourceKey=SelectionCanvasContentTemplate}">
+    <Border BorderBrush="#FF007FFF" BorderThickness="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+      <Border.Background>
+        <SolidColorBrush Color="#007FFF" Opacity="0.3" />
+      </Border.Background>
+    </Border>
+  </DataTemplate>
+</ResourceDictionary>

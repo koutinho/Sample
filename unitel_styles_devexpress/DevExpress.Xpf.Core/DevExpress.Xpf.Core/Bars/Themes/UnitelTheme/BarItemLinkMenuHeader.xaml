@@ -1,0 +1,20 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxbc="http://schemas.devexpress.com/winfx/2008/xaml/bars/internal" xmlns:dxbt="http://schemas.devexpress.com/winfx/2008/xaml/bars/themekeys" xmlns:dxcn="http://schemas.devexpress.com/winfx/2008/xaml/core/internal" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Style x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=HeaderStyle}" TargetType="{x:Type ContentControl}">
+    <Setter Property="Foreground" Value="#FF333333" />
+  </Style>
+  <ControlTemplate x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=HeaderTemplate}" TargetType="{x:Type dxb:BarItemLinkMenuHeaderContentControl}">
+    <Grid>
+      <Border x:Name="PART_Border" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" BorderThickness="{TemplateBinding ContentBorderThickness}" CornerRadius="{TemplateBinding ContentCornerRadius}" VerticalAlignment="Stretch" />
+      <ContentPresenter Margin="5" VerticalAlignment="Stretch" />
+    </Grid>
+  </ControlTemplate>
+  <ControlTemplate x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=ItemsControlTemplate}" TargetType="{x:Type dxb:BarItemMenuHeaderItemsControl}">
+    <Border x:Name="PART_SeparatorBorder" BorderBrush="#FFB9B9B9" BorderThickness="{TemplateBinding ItemsBorderThickness}" VerticalAlignment="Stretch">
+      <ItemsPresenter x:Name="PART_ItemsPresenter" Margin="{TemplateBinding ItemsPresenterThickness}" />
+    </Border>
+  </ControlTemplate>
+  <sys:Double x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=RowIndent}">0</sys:Double>
+  <sys:Double x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=ColumnIndent}">0</sys:Double>
+  <Thickness x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=HorizontalGlyphPadding}">2,0,2,0</Thickness>
+  <dxb:BarItemLinkMenuHeaderControlStatesResourceHolder x:Key="{dxbt:BarItemLinkMenuHeaderThemeKey ResourceKey=StatesHolder}" ContentBorderThicknessBottom="0,1,0,0" ContentBorderThicknessCenter="0,1,0,1" ContentBorderThicknessTop="0,0,0,1" CornerRadiusCommon="0" HorizontalItemsPresenterThickness="4,0,4,0" ItemsBorderThicknessCollapsed="0" ItemsBorderThicknessVisible="0,0,0,1" VerticalItemsPresenterThickness="0" />
+</ResourceDictionary>

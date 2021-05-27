@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg9188" Width="32" Height="32.000001">
+    <Canvas.RenderTransform>
+      <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <!--Unknown tag: metadata-->
+    <Canvas Name="layer1">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="-1020.3622"/>
+      </Canvas.RenderTransform>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4148" StrokeThickness="1" Stroke="#FF007000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 5 1029.8622 22.875 0.125" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+      <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="8.9" Width="1.8" Canvas.Top="1029.2" Height="1.6" Name="path4150" Fill="#FF0000FF" StrokeThickness="2" Stroke="#FF007000" StrokeMiterLimit="4"/>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4152" Fill="#FF007000" StrokeThickness="1" Stroke="#FF007000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 9.7447962 1029.7372 0 6.375" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4154" StrokeThickness="1" Stroke="#FF007000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 9.7447962 1042.4872 0 3.375" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+      <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="5.8697963" Canvas.Top="1035.7997" Width="7.90625" Height="6.5625" Name="rect4158" StrokeThickness="1" Stroke="#FF007000" StrokeMiterLimit="4"/>
+      <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="21.3" Width="1.8" Canvas.Top="1029.2" Height="1.6" Name="path41501" Fill="#FF0000FF" StrokeThickness="2" Stroke="#FF007000" StrokeMiterLimit="4"/>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path41528" Fill="#FF007000" StrokeThickness="1" Stroke="#FF007000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 22.195738 1029.6702 0 6.375" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path41547" StrokeThickness="1" Stroke="#FF007000" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat">
+        <Path.Data>
+          <PathGeometry Figures="m 22.195738 1042.4202 0 3.375" FillRule="evenodd"/>
+        </Path.Data>
+      </Path>
+      <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="18.320738" Canvas.Top="1035.7327" Width="7.90625" Height="6.5625" Name="rect41582" StrokeThickness="1" Stroke="#FF007000" StrokeMiterLimit="4"/>
+    </Canvas>
+  </Canvas>
+</Viewbox>

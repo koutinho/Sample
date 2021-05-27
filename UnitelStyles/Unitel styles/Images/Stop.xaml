@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is NOT compatible with Silverlight-->
+<Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+  <Canvas Name="svg2" Width="32" Height="32">
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <!--Unknown tag: metadata-->
+    <Canvas Name="layer1">
+      <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="-1020.3622"/>
+      </Canvas.RenderTransform>
+      <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path3835" Fill="#FFFF0000" StrokeThickness="1" Stroke="#FFFF0000" StrokeMiterLimit="4">
+        <Path.Data>
+          <PathGeometry Figures="M 28.991378 16.797205 A 11.667262 10.960155 0 0 1 17.324116 27.75736 11.667262 10.960155 0 0 1 5.6568537 16.797205 11.667262 10.960155 0 0 1 17.324116 5.8370504 11.667262 10.960155 0 0 1 28.991378 16.797205 Z" FillRule="NonZero"/>
+        </Path.Data>
+        <Path.RenderTransform>
+          <TranslateTransform X="-1.0606603" Y="1019.4783"/>
+        </Path.RenderTransform>
+      </Path>
+      <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="9.125" Canvas.Top="1034.3622" Width="14.125" Height="4.125" Name="rect3837" Fill="#FFFFFFFF" StrokeThickness="1" Stroke="#FFFFFFFF" StrokeMiterLimit="4"/>
+    </Canvas>
+  </Canvas>
+</Viewbox>

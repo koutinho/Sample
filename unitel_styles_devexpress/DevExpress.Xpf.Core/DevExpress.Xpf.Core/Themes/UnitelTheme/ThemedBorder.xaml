@@ -1,0 +1,4 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <SolidColorBrush x:Key="{dxt:ThemedBorderThemeKey ResourceKey=BackgroundBrush}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxt:ThemedBorderThemeKey ResourceKey=BorderBrush}" Color="#FFD6D6D6" />
+</ResourceDictionary>

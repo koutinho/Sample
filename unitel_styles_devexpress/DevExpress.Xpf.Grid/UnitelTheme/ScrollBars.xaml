@@ -1,0 +1,114 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" xmlns:dxgt="http://schemas.devexpress.com/winfx/2008/xaml/grid/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!--BEGIN WPF-->
+  <ResourceDictionary.MergedDictionaries>
+    <dxdst:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Grid/UnitelTheme/Constants.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <SolidColorBrush x:Key="ScrollBar.Background" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="ScrollBar.BorderBrush" Color="#FFD6D6D6" />
+  <!--END WPF-->
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingCornerStyle}" TargetType="Border">
+    <Setter Property="Background" Value="#FFF0F0F0" />
+    <!--BEGIN WPF-->
+    <Style.Triggers>
+      <Trigger Property="dxg:GridBorderHelper.ShowBorder" Value="True">
+        <Setter Property="Background" Value="{StaticResource ScrollBar.Background}" />
+        <Setter Property="BorderBrush" Value="{StaticResource ScrollBar.BorderBrush}" />
+      </Trigger>
+      <MultiTrigger>
+        <MultiTrigger.Conditions>
+          <Condition Property="dxg:GridBorderHelper.ShowBorder" Value="False" />
+          <Condition Property="dxg:GridScrollBarHelper.HasFixedRightColumns" Value="True" />
+          <Condition Property="dxg:GridScrollBarHelper.ExtendScrollBarToFixedColumns" Value="False" />
+        </MultiTrigger.Conditions>
+        <MultiTrigger.Setters>
+          <Setter Property="Background" Value="Transparent" />
+          <Setter Property="BorderBrush" Value="{StaticResource ScrollBar.BorderBrush}" />
+          <Setter Property="BorderThickness" Value="0,1,0,0" />
+        </MultiTrigger.Setters>
+      </MultiTrigger>
+    </Style.Triggers>
+    <!--END WPF-->
+  </Style>
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingCornerLeftStyle}" TargetType="Border">
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="{StaticResource ScrollBar.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource ScrollBar.BorderBrush}" />
+    <Setter Property="BorderThickness" Value="0,1,1,0" />
+    <!--BEGIN WPF-->
+    <Style.Triggers>
+      <Trigger Property="dx:ScrollBarExtensions.ScrollBarMode" Value="TouchOverlap">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+      </Trigger>
+    </Style.Triggers>
+    <!--END WPF-->
+  </Style>
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingFixedLeftThumbStyle}" TargetType="Border">
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="{StaticResource ScrollBar.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource ScrollBar.BorderBrush}" />
+    <Setter Property="BorderThickness" Value="0,1,0,0" />
+    <!--BEGIN WPF-->
+    <Style.Triggers>
+      <Trigger Property="dx:ScrollBarExtensions.ScrollBarMode" Value="TouchOverlap">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+      </Trigger>
+      <Trigger Property="dxg:GridBorderHelper.ShowBorder" Value="True">
+        <Setter Property="BorderThickness" Value="0" />
+      </Trigger>
+    </Style.Triggers>
+    <!--END WPF-->
+  </Style>
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingFixedRightThumbStyle}" TargetType="Border">
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="{StaticResource ScrollBar.Background}" />
+    <Setter Property="BorderBrush" Value="{StaticResource ScrollBar.BorderBrush}" />
+    <Setter Property="BorderThickness" Value="0,1,0,0" />
+    <!--BEGIN WPF-->
+    <Style.Triggers>
+      <Trigger Property="dx:ScrollBarExtensions.ScrollBarMode" Value="TouchOverlap">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+      </Trigger>
+      <Trigger Property="dxg:GridBorderHelper.ShowBorder" Value="True">
+        <Setter Property="BorderThickness" Value="0" />
+      </Trigger>
+    </Style.Triggers>
+    <!--END WPF-->
+  </Style>
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingFixedLineStyle}" TargetType="Border">
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="{StaticResource ScrollBar.BorderBrush}" />
+    <Setter Property="BorderThickness" Value="1,1,1,0" />
+    <!--BEGIN WPF-->
+    <Style.Triggers>
+      <Trigger Property="dx:ScrollBarExtensions.ScrollBarMode" Value="TouchOverlap">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+      </Trigger>
+      <Trigger Property="dxg:GridBorderHelper.ShowBorder" Value="True">
+        <Setter Property="BorderThickness" Value="1,0" />
+      </Trigger>
+    </Style.Triggers>
+    <!--END WPF-->
+  </Style>
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingFixedLineContentTotalSummaryStyle}" TargetType="Border">
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="#FFD6D6D6" />
+    <Setter Property="BorderThickness" Value="1,1,1,0" />
+  </Style>
+  <DataTemplate x:Key="{dxgt:ScrollBarThemeKey ResourceKey=ScrollingFixedLineTotalSummaryTemplate}">
+    <Border Style="{DynamicResource ResourceKey={dxgt:ScrollBarThemeKey ResourceKey=ScrollingFixedLineContentTotalSummaryStyle}}" />
+  </DataTemplate>
+  <Style x:Key="{dxgt:ScrollBarThemeKey ResourceKey=FixedLeftLinePlaceHolderTotalSummaryStyle}" TargetType="ContentPresenter">
+    <Setter Property="Margin" Value="0,0,0,-3" />
+  </Style>
+</ResourceDictionary>

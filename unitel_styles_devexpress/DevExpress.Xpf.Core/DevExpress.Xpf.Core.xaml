@@ -1,0 +1,24 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <dxc:ResourceDictionaryEx Source="/DevExpress.Xpf.Themes.UnitelTheme.v20.2;component/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/DXPanel.xaml" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/Generic.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Bars/Themes/UnitelTheme.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/TabControl/Themes/UnitelTheme.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/GroupBoxAndGroupFrame.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Editors/Themes/Generic/Generic.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Editors/Themes/UnitelTheme.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/StandardControlStyles.XAML}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/Badges.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/Window.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/SuperTip.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/UserControl.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/PopUp.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/PseudoWindow.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/CustomTemplates.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/SearchPanel.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/WaitIndicators.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/ThemedWindow.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/ThemedBorder.xaml}" />
+    <dxc:ResourceDictionaryEx Source="{dxc:ThemePartLoader Path=/DevExpress.Xpf.Core/DevExpress.Xpf.Core/Themes/UnitelTheme/DragDrop.xaml}" />
+  </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

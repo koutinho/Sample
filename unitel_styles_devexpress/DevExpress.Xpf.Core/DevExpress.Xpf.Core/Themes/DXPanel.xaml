@@ -1,0 +1,39 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:dxdst="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys" xmlns:local="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Color x:Key="BackgroundPanelForeground">#FF3C3C3C</Color>
+  <SolidColorBrush x:Key="BackgroundPanelBackground" Color="#FFFFFFFF"></SolidColorBrush>
+  <!--BEGIN WPF-->
+  <Style x:Key="{dxdst:DefaultStyleThemeKey FullName=DevExpress.Xpf.Core.BackgroundPanel}" TargetType="local:BackgroundPanel">
+    <!--END WPF-->
+    <!--ONLY SL 
+    <Style TargetType="local:BackgroundPanel"> 
+    ONLY SL-->
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="IsTabStop" Value="False" />
+    <!--BEGIN WPF-->
+    <Setter Property="Focusable" Value="False" />
+    <Setter Property="Control.Foreground" Value="{DynamicResource {dxdst:ThemeColorsThemeKey ResourceKey=WhiteForegroundColor}}" />
+    <Setter Property="Background" Value="{DynamicResource {dxdst:FloatingContainerThemeKey ResourceKey=FloatingContainerBackground}}" />
+    <!--END WPF-->
+    <!--ONLY SL 
+        <Setter Property="Control.Foreground" Value="{StaticResource BackgroundPanelForeground}" />
+        <Setter Property="Background" Value="{StaticResource BackgroundPanelBackground}" />
+    ONLY SL-->
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="local:BackgroundPanel">
+          <!--BEGIN WPF-->
+          <Border Background="{TemplateBinding Background}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+            <ContentPresenter x:Name="contentPresenter" />
+          </Border>
+          <!--END WPF-->
+          <!--ONLY SL
+                    <Border Background="{TemplateBinding Background}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
+                        <ContentPresenter Content="{TemplateBinding Content}" x:Name="contentPresenter"/>
+                    </Border>
+                    ONLY SL-->
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+</ResourceDictionary>

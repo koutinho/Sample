@@ -1,0 +1,30 @@
+﻿<ResourceDictionary mc:Ignorable="cs" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:cs="colorscheme_ignorable_uri" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" xmlns:dxprg="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid" xmlns:dxprgt="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid/themekeys" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <sys:Double x:Key="{dxprgt:DataRowThemeKey ResourceKey=DataRowHeaderThumbWidth}">5</sys:Double>
+  <sys:Double x:Key="{dxprgt:DataRowThemeKey ResourceKey=ExpanderWidth}">22</sys:Double>
+  <sys:Double x:Key="{dxprgt:DataRowThemeKey ResourceKey=TouchExpanderWidth}">44</sys:Double>
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Editor_Normal}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Editor_ReadOnly}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Editor_Selected}" Color="#FFF0F0F0" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Editor_SelectedInactive}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Editor_SelectedReadOnly}" Color="#FFF0F0F0" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Editor_SelectedInactiveReadOnly}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Editor_Normal}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Editor_ReadOnly}" Color="#7F3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Editor_Selected}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Editor_SelectedInactive}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Editor_SelectedReadOnly}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Editor_SelectedInactiveReadOnly}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Header_Normal}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Header_ReadOnly}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Header_Selected}" Color="#FFCDE6F7" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Header_SelectedInactive}" Color="#FFF0F0F0" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Header_SelectedReadOnly}" Color="#FFCDE6F7" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Background_Header_SelectedInactiveReadOnly}" Color="#FFFFFFFF" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=BorderBrush}" Color="#FFD6D6D6" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Header_Normal}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Header_ReadOnly}" Color="#7F3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Header_Selected}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Header_SelectedInactive}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Header_SelectedReadOnly}" Color="#FF3C3C3C" />
+  <SolidColorBrush x:Key="{dxprgt:VSViewBrushThemeKey ResourceKey=Foreground_Header_SelectedInactiveReadOnly}" Color="#FF3C3C3C" />
+</ResourceDictionary>

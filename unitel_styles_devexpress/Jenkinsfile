@@ -1,0 +1,76 @@
+String status = "SUCCESS"
+def statusList = ['SUCCESS', 'FAILURE', 'UNSTABLE']
+try 
+{  
+	stage "get LOG on master"
+    node ('master') 
+	{
+        milestone label: '', ordinal:  Integer.parseInt(env.BUILD_ID) - 1
+		milestone label: '', ordinal:  Integer.parseInt(env.BUILD_ID)
+		
+		checkout scm
+		notifyBitbucket()
+		GIT_COMMIT_LOG = sh(returnStdout: true, script: "git log -1").trim()
+		COMMITTER_EMAIL = sh(returnStdout: true, script: "git log -1 --pretty=format:%ce").trim()
+		COMMIT_ID = sh(returnStdout: true, script: "git log -1 --pretty=format:%h").trim()
+		COMMIT_COMMENT = sh(returnStdout: true, script: "git log -1 --no-merges --pretty=format:%s").trim()
+		properties([[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', artifactNumToKeepStr: '1', numToKeepStr: '10']]]);
+    }
+	
+    stage "build on Win7-x86-1"
+    node ('Win7-x86-1') 
+	{
+        checkout scm
+		
+		bat 'chcp 1251>nul && "C:/Program Files/MSBuild/14.0/Bin/MSBuild.exe" DevExpress.Xpf.Themes.UnitelTheme.sln /property:Configuration=Release'
+		
+        step([$class: 'ArtifactArchiver', artifacts: 'Bin/DevExpress.Xpf.Themes.UnitelTheme.v20.2.dll', excludes: null])
+    }
+} 
+catch(any) 
+{
+        status = 'FAILURE!'
+		
+		//if variables not exist
+		if (binding.hasVariable('GIT_COMMIT_LOG') == false)
+		{
+			GIT_COMMIT_LOG = ''
+		}
+		if (binding.hasVariable('COMMITTER_EMAIL') == false)
+		{
+			COMMITTER_EMAIL = ''
+		}
+		if (binding.hasVariable('COMMIT_COMMENT') == false)
+		{
+			COMMIT_COMMENT = 'Checkout Error'
+		}
+		
+        throw any //rethrow exception to prevent the build from proceeding
+} 
+finally 
+{
+    node 
+	{
+		if (env.JOB_NAME == 'Unitel_styles_DevExpress/develop' || env.JOB_NAME == 'Unitel_styles_DevExpress/master')
+		{
+			emailext(
+				subject: "[jenkins]$status Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+				body: "<h2 style='color: #5e9ca0;'>${env.JOB_NAME} [${env.BUILD_NUMBER}]&nbsp;&nbsp;&nbsp;&nbsp;<u>$status</u></h2><br><br>Commit log:<br>${GIT_COMMIT_LOG}<br><br>Check console output at <a href='$BUILD_URL'>$BUILD_URL</a> to view the results.<br><br>",
+				mimeType: 'text/html',
+				to: "d.andreev@uni-eng.ru, a.slavutskiy@uni-eng.ru, v.stepanov@uni-eng.ru, a.vasiliev@uni-eng.ru, a.yakovlev@uni-eng.ru, r.ivanov@uni-eng.ru, e.kazakov@uni-eng.ru, ${COMMITTER_EMAIL}")
+		}
+		else
+		{
+			emailext(
+				subject: "[jenkins]$status Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
+				body: "<h2 style='color: #5e9ca0;'>${env.JOB_NAME} [${env.BUILD_NUMBER}]&nbsp;&nbsp;&nbsp;&nbsp;<u>$status</u></h2><br><br>Commit log:<br>${GIT_COMMIT_LOG}<br><br>Check console output at <a href='$BUILD_URL'>$BUILD_URL</a> to view the results.<br><br>",
+				mimeType: 'text/html',
+				to: "${COMMITTER_EMAIL}")
+		}
+		
+		currentBuild.description = "${COMMIT_COMMENT}"
+		
+		currentBuild.result = status
+		notifyBitbucket(considerUnstableAsSuccess: true)
+    }
+}
